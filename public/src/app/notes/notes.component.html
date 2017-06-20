@@ -1,0 +1,6 @@
+<div class='container border padding center scroll'>
+  <div class='container border padding'*ngFor="let note of notes">
+    <p class='date'>{{ note.createdAt  | date:'medium'}}</p>
+    <h3>{{ note.content }}</h3>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class='container border'>
+  <h1>Anonymous Notes</h1>
+  <div class='container border note-form'>
+    <form (submit)='submitNote()' onsubmit="return false">
+      <input type="text" name="note" placeholder="Enter note here" class='form-control col-9 ib'[(ngModel)]='note.content'>
+      <button type="submit"class='btn btn-primary col-2 ib'>Submit</button>
+      
+    </form>
+  </div>
+  <app-notes></app-notes>
+</div>
